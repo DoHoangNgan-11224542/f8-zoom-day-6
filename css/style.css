@@ -238,3 +238,249 @@ h1 {
 .job-box p, .extra-box p {
   margin-bottom: 10px;
 }
+
+/* CSS pricing-flex.html */
+.pricing-table-wrapper {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-and-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav > ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav > ul > li.has-sub-menu {
+  min-width: 100px;
+  text-align: center;
+}
+
+.nav > ul > li:nth-child(3) {
+  margin-left: 10px;
+}
+
+.nav > ul > li > a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+}
+
+.nav > ul > li.has-sub-menu > a::after {
+  content: "\f078";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 0.675rem;
+  position: absolute;
+  top: 5px;
+}
+
+.btn-group button {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.btn-group .register {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-group .sign-in:hover {
+  border-color: #000;
+}
+
+.btn-group .register:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.main-content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding-bottom: 1.25rem;
+  letter-spacing: -0.125rem;
+}
+
+.main-content p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.date-sub-wrapper {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.date-sub-wrapper .monthly {
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  color: #777;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+.date-sub-wrapper .annual {
+  padding: 8px 20px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: calc(50% - 16px);
+}
+
+.pricing-list-wrapper {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.pricing-table-box {
+  border: 1px solid #ddd;
+  padding: 21px 25px;
+  border-radius: 15px;
+  transition: all ease 0.2s;
+}
+
+.pricing-table-box:nth-child(2) {
+  box-shadow: rgba(83, 155, 247) 0px 8px 24px;
+}
+
+.pricing-table-box .type-label {
+  padding: 10px 0 30px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pricing-table-box .price-and-sale {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pricing-table-box .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.pricing-table-box .sale {
+  font-size: 0.75rem;
+  border: 1px solid #c8dcff;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background-color: #e8f0ff;
+  color: #539bf7;
+}
+
+.pricing-table-box .description {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.pricing-table-box .pricing-table-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.pricing-table-box .pricing-table-content > ul > li {
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+}
+
+.pricing-table-box .pricing-table-content > ul > li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 7 Free";
+  font-size: 0.675rem;
+  font-weight: 900;
+  padding: 5px;
+  color: #777;
+  background-color: #eee;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+}
+
+.btn-sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-sub-container button {
+  padding: 8px 12px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.btn-sub-container .pro {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-sub-container button:hover {
+  border-color: #000;
+}
+
+.btn-sub-container .pro:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.pricing-table-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pricing-table-box:nth-child(2):hover {
+  box-shadow: rgba(83, 155, 247) 0px 8px 24px;
+  transform: translateY(-30px);
+}
