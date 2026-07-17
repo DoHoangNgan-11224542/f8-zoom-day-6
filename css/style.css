@@ -484,3 +484,160 @@ h1 {
   box-shadow: rgba(83, 155, 247) 0px 8px 24px;
   transform: translateY(-30px);
 }
+
+/* CSS product-list.html */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.375rem;
+  padding: 20px 50px;
+  border-bottom: 1px solid #000;
+}
+
+.logo-box {
+  width: 100px;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.search-and-bag {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.search-and-bag button {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.search-and-bag input {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f5f5f5;
+}
+
+.bag {
+  padding-top: 8px;
+}
+
+.banner {
+  height: 400px;
+  padding: 20px 50px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-title {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list-of-products {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-item {
+  width: 30%;
+  gap: 30px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-img {
+  height: 400px;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-info {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-info > :nth-child(5) {
+  align-self: center;
+}
+
+.just-in {
+  font-size: 1.25rem;
+  color: #d33918;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.product-type {
+  color: #707072;
+  font-weight: 700;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px auto;
+}
+
+footer {
+  height: 100px;
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
