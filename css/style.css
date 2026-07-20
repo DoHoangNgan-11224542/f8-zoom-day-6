@@ -1,6 +1,10 @@
 :root {
   --cv-sidebar-color: #e8eaee;
   --cv-sidebar-font-color: #5c6168;
+  --register-bgc: #f8f8f8;
+  --font-14px: 0.875rem;
+  --font-20px: 1.25rem;
+  --font-10px: 0.625rem;
 }
 
 /* CSS index.html */
@@ -27,7 +31,7 @@ body {
   border-radius: 10px;
 }
 
-h1 {
+.sidebar-box .profile h1 {
   font-size: 1.75rem;
   text-align: center;
   padding: 10px 0;
@@ -61,7 +65,7 @@ h1 {
   max-width: 650px;
   display: flex;
   margin: 20px auto;
-  box-shadow: 2px 0px 28px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 0px 28px 0px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar {
@@ -70,7 +74,8 @@ h1 {
   padding: 30px 40px;
 }
 
-.sidebar-box, .profile-box {
+.sidebar-box,
+.profile-box {
   margin-bottom: 30px;
 }
 
@@ -79,7 +84,7 @@ h1 {
 }
 
 .sidebar-box h1 {
-  font-size: 1.25rem;
+  font-size: var(--font-20px);
   font-weight: 700;
   text-transform: capitalize;
   text-align: left;
@@ -94,7 +99,7 @@ h1 {
 }
 
 .sidebar-box .job-title {
-  font-size: 0.675rem;
+  font-size: var(--font-10px);
   text-transform: uppercase;
   line-height: 1.4;
   display: flex;
@@ -113,10 +118,14 @@ h1 {
 
 .sidebar-box .location {
   margin-left: 12px;
-  font-size: 0.675rem;
+  font-size: var(--font-10px);
 }
 
-.education-title,.skills-title, .profile-title, .experience-title, .extra-title {
+.education-title,
+.skills-title,
+.profile-title,
+.experience-title,
+.extra-title {
   font-size: 0.8125rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -138,12 +147,16 @@ h1 {
 }
 
 .education-box,
-.skills-box, .job-box, .extra-box {
-  font-size: 0.675rem;
+.skills-box,
+.job-box,
+.extra-box {
+  font-size: var(--font-10px);
   margin-bottom: 24px;
 }
 
-.course-title, .job-pos, .title-title {
+.course-title,
+.job-pos,
+.title-title {
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -163,11 +176,13 @@ h1 {
   font-size: 0.675em;
 }
 
-.list-skills ul, .job-box ul {
+.list-skills ul,
+.job-box ul {
   margin-left: 12px;
 }
 
-.list-skills li, .job-box li {
+.list-skills li,
+.job-box li {
   list-style: disc;
   margin-bottom: 6px;
 }
@@ -190,7 +205,7 @@ h1 {
 }
 
 .info-box a {
-  font-size: 0.675rem;
+  font-size: var(--font-10px);
   text-decoration: none;
   color: var(--cv-sidebar-font-color);
   margin-bottom: 6px;
@@ -214,7 +229,9 @@ h1 {
   width: 100%;
 }
 
-.profile-title::after, .experience-title::after, .extra-title::after {
+.profile-title::after,
+.experience-title::after,
+.extra-title::after {
   content: "";
   position: absolute;
   left: -30px;
@@ -225,17 +242,19 @@ h1 {
 }
 
 .cv-content p {
-  font-size: 0.675rem;
+  font-size: var(--font-10px);
   line-height: 1.4;
 }
 
-.com-and-time, .place-and-time {
+.com-and-time,
+.place-and-time {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.job-box p, .extra-box p {
+.job-box p,
+.extra-box p {
   margin-bottom: 10px;
 }
 
@@ -275,7 +294,7 @@ h1 {
 
 .nav > ul > li > a {
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: var(--font-14px);
   font-weight: 500;
   color: #000;
   position: relative;
@@ -286,7 +305,7 @@ h1 {
   font-family: "Font Awesome 7 Free";
   font-weight: 900;
   margin-left: 10px;
-  font-size: 0.675rem;
+  font-size: var(--font-10px);
   position: absolute;
   top: 5px;
 }
@@ -295,7 +314,7 @@ h1 {
   padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  font-size: 0.875rem;
+  font-size: var(--font-14px);
   font-weight: 500;
   background-color: #fff;
 }
@@ -323,12 +342,12 @@ h1 {
 .main-content h1 {
   font-size: 3.5rem;
   font-weight: 600;
-  padding-bottom: 1.25rem;
+  padding-bottom: var(--font-20px);
   letter-spacing: -0.125rem;
 }
 
 .main-content p {
-  font-size: 1.25rem;
+  font-size: var(--font-20px);
   line-height: 1.4;
   font-weight: 500;
 }
@@ -346,7 +365,7 @@ h1 {
   border: 1px solid #ddd;
   background-color: #ddd;
   color: #777;
-  font-size: 0.875rem;
+  font-size: var(--font-14px);
   font-weight: 600;
   border-radius: 10px;
   margin-right: 100px;
@@ -382,7 +401,7 @@ h1 {
 
 .pricing-table-box .type-label {
   padding: 10px 0 30px 0;
-  font-size: 1.25rem;
+  font-size: var(--font-20px);
   font-weight: 600;
 }
 
@@ -421,13 +440,13 @@ h1 {
 
 .pricing-table-box .pricing-table-content > ul > li {
   margin-bottom: 15px;
-  font-size: 0.875rem;
+  font-size: var(--font-14px);
 }
 
 .pricing-table-box .pricing-table-content > ul > li::before {
   content: "\f00c";
   font-family: "Font Awesome 7 Free";
-  font-size: 0.675rem;
+  font-size: var(--font-10px);
   font-weight: 900;
   padding: 5px;
   color: #777;
@@ -499,7 +518,7 @@ header {
   width: 100px;
 }
 
-nav ul{
+nav ul {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -600,14 +619,14 @@ nav a {
 }
 
 .just-in {
-  font-size: 1.25rem;
+  font-size: var(--font-20px);
   color: #d33918;
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .product-name {
-  font-size: 1.25rem;
+  font-size: var(--font-20px);
   font-weight: 600;
 }
 
@@ -617,7 +636,7 @@ nav a {
 }
 
 .product-price {
-  font-size: 1.25rem;
+  font-size: var(--font-20px);
   font-weight: 600;
 }
 
@@ -637,7 +656,103 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
+  font-size: var(--font-20px);
   font-weight: 600;
 }
 
+/* CSS Register Layout */
+.register-container {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  min-height: 100vh;
+  padding: 50px;
+  background-color: var(--register-bgc);
+}
+
+.register-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 75px 0;
+  border-radius: 20px;
+  gap: 120px;
+}
+
+.register-form {
+  /* margin: 0 50px; */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.register-form h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #999;
+  padding: 6px 10px;
+}
+
+.form-input input {
+  width: 100%;
+  /* display: block; */
+  border: none;
+  /* border-bottom: 1px solid #999; */
+}
+
+.form-input input:focus {
+  border: none;
+  outline: none;
+}
+
+.form-input:focus-within {
+  border-bottom-color: #222;
+}
+
+.form-checkbox {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.form-checkbox a {
+  color: #000;
+}
+
+.btn-register {
+  padding: 15px 39px;
+  width: auto;
+  background-color: #6dabe4;
+  border: none;
+  color: #fff;
+  align-self: flex-start;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  background-color: #4292dc;
+}
+
+.picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.picture-container a {
+  color: #000;
+  font-size: 0.8125rem;
+}
